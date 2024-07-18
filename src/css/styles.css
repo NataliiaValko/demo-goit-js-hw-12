@@ -8,10 +8,6 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
-.hidden {
-  display: none;
-}
-
 .preloader {
   position: fixed;
   display: flex;
@@ -83,8 +79,10 @@ body {
   display: flex;
   justify-content: center;
   gap: 8px;
+  width: 371px;
 
   margin-bottom: 32px;
+  margin: 0 auto 32px;
 }
 
 .search-form-input {
@@ -115,7 +113,8 @@ body {
   }
 }
 
-.search-form-button {
+.search-form-button,
+.load-more {
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
@@ -127,6 +126,8 @@ body {
   padding: 8px 16px;
   border: none;
   border-radius: 8px;
+  margin: 0 auto;
+  display: flex;
 
   transition: background-color 0.5s ease;
 
@@ -140,6 +141,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 24px;
+  margin-bottom: 32px;
 }
 
 .gallery-link {
@@ -195,4 +197,8 @@ body {
   line-height: 200%;
   letter-spacing: 0.04em;
   color: #2e2f42;
+}
+
+.hidden {
+  display: none;
 }
